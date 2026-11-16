@@ -1,0 +1,48 @@
+/* Black Sheep legal and support pages. Plain static HTML for GitHub Pages; no scripts, no trackers, no cookies. */
+:root {
+  --bg: #fff3df;
+  --card: #fffbf2;
+  --text: #613310;
+  --muted: #7a4a22;
+  --border: #e7b672;
+  --accent: #4c7a1f;
+  --link: #3f6a14;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1712;
+    --card: #2a211a;
+    --text: #fbf8f2;
+    --muted: #e3cfb4;
+    --border: #7a5a33;
+    --accent: #a5cf2e;
+    --link: #b9e05a;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+header.site { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+header.site a.home { font-weight: 800; color: var(--text); text-decoration: none; font-size: 18px; }
+nav.lang a { margin-left: 12px; font-weight: 700; }
+h1 { font-size: 30px; line-height: 1.2; margin: 16px 0 4px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 18px; margin: 20px 0 6px; }
+p.updated { color: var(--muted); margin-top: 0; }
+a { color: var(--link); }
+.card { background: var(--card); border: 2px solid var(--border); border-radius: 16px; padding: 16px 20px; margin: 16px 0; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); padding: 8px 10px 8px 0; }
+th { font-weight: 800; }
+ul.links { list-style: none; padding: 0; }
+ul.links li { margin: 10px 0; font-size: 19px; }
+details { background: var(--card); border: 2px solid var(--border); border-radius: 12px; padding: 10px 14px; margin: 10px 0; }
+summary { cursor: pointer; font-weight: 700; }
+footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
